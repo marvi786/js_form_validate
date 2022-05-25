@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/form(validate).css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="validate-form" action="result.html" method="GET">
+        <div class="title">
+            <h2>Create Form</h2>
+        </div>
+        <!--<div class="input-group success"> this will have two classes: input-group and success or error -->
+        
+        <div class="input-group">
+            <label for="username">
+                User name
+            </label>
+            <input type="text" id="username" name="username" placeholder="username" autocomplete="off">
+            <p>
+                Error Message
+            </p> 
+        </div>
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="email" name="email" placeholder="email" autocomplete="off">
+            <p>Error Message</p> 
+        </div>
+        <div class="input-group">
+            <label>password</label>
+            <input type="password" id="password" name="password" placeholder="password">
+            <p>Error Message</p> 
+        </div>
+        <div class="input-group">
+            <label>confirm password</label>
+            <input type="password" id="conpassword" name="conpassword" placeholder="confirm password">
+            <p>Error Message</p> 
+        </div>
+            <button type="submit" class="btn">Submit</button>
+    </form>
+    <script src="js/form(validate).js"></script>
+</body>
+</html>
